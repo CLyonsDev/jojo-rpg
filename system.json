@@ -1,27 +1,43 @@
 {
-  "name": "jojo-rpg",
-  "title": "JoJo's Bizarre Adventure: The RPG v1.4",
-  "description": "A tabletop RPG system aimed at giving players the experience of building their own JoJo stories.",
-  "version": 1.0,
-  "minimumCoreVersion": "0.5.6",
-  "compatibleCoreVersion": "0.7.5",
-  "templateVersion": 2,
-  "author": "CLyonsDev",
+  "id": "jojo-rpg",
+  "title": "JoJo's Bizarre Adventure: The RPG 2e",
+  "description": "A system for Esby's JoJo's Bizarre Adventure: TTRPG into Foundry.",
+  "version": "2.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10",
+    "maximum": "10"
+  },
+  "authors": [
+    {
+      "name": "CLyonsDev",
+      "url": "https://twitter.com/CLyonsDev",
+	    "email": "email@email.com",
+	    "discord": "slimabob#9614"
+    }
+  ],
   "scripts": [
-    "./module/resetInitiative.js",
-    "./module/nextTurn.js",
-    "./hooks/preCreateActor.js"],
-  "esmodules": ["module/simple.js",
-  "module/jojo.js"],
-  "styles": ["styles/simple.css"],
-  "packs": [],
-  "languages": [],
-  "gridDistance": 1,
+    
+  ],
+  "esmodules": [
+    
+  ],
+  "styles": [
+    
+  ],
+  "packs": [
+
+  ],
+"languages": [
+
+  ],
+  "socket": false,
+  "initiative": "1d20",
+  "gridDistance": 5,
   "gridUnits": "m",
-  "primaryTokenAttribute": "stamina",
-  "secondaryTokenAttribute": "momentum",
-  "url": "https://github.com/slimabob/jojo-rpg/blob/master/README.md",
-  "manifest": "https://github.com/slimabob/jojo-rpg/blob/master/system.json",
-  "download": "https://github.com/slimabob/jojo-rpg/archive/master.zip",
-  "license": "Copyright 2020 CLyonsDev -- GNU AGPLv3"
+  "primaryTokenAttribute": "resources.health",
+  "secondaryTokenAttribute": "resources.power",
+  "url": "https://your/hosted/system/repo/",
+  "manifest": "https://your/hosted/system/repo/system.json",
+  "download": "https://your/packaged/download/archive.zip"
 }
