@@ -12,25 +12,21 @@
     {
       "name": "CLyonsDev",
       "url": "https://twitter.com/CLyonsDev",
-	    "email": "email@email.com",
-	    "discord": "slimabob#9614"
+      "email": "email@email.com",
+      "discord": "slimabob#9614"
     }
   ],
   "scripts": [
-    
+    "scripts/character-scripts.js"
   ],
   "esmodules": [
-    
+    "jjba2e.js"
   ],
   "styles": [
-    
+    "./styles/jjba2e.css"
   ],
-  "packs": [
-
-  ],
-"languages": [
-
-  ],
+  "packs": [],
+  "languages": [],
   "socket": false,
   "initiative": "1d20",
   "gridDistance": 5,

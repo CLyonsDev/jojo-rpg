@@ -1,0 +1,244 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    <head>
+    </head>
+    <div class="header">
+        <h1>
+            <div data-edit="data.name" contenteditable>
+                {{data.name}}
+            </div>
+    </div>
+    <div class="column-row-container">
+        <div class="column-new">
+            <div class="traits">
+                <h3>Impulses</h3>
+                <div class="impulse">
+                    <div class="impulse-desc">
+                        <p>Your Character's surface qualities.<br>
+                            <u>Show off</u> an Impulse to receive a +3 bonus.<br>
+                            <u>Go against</u> an Impulse to receive a -3 penalty.<br>
+                            To advance, mark a box when that Impulse gets you into trouble.
+                        </p>
+                    </div>
+                    <div name="impulse1" class="impulse-wrapper">
+                        <div class="impulse-header">
+                            <input type="text" name="system.user-traits.impulses.impulse1.name"
+                                value="{{actor.system.user-traits.impulses.impulse1.name}}" />
+                            <input type="checkbox" name="system.user-traits.impulses.impulse1.advancement1" {{checked
+                                actor.system.user-traits.impulses.impulse1.advancement1}} />
+                            <input type="checkbox" name="system.user-traits.impulses.impulse1.advancement2" {{checked
+                                actor.system.user-traits.impulses.impulse1.advancement2}} />
+                            <input type="checkbox" name="system.user-traits.impulses.impulse1.advancement3" {{checked
+                                actor.system.user-traits.impulses.impulse1.advancement3}} />
+                        </div>
+                        <textarea
+                            name="system.user-traits.impulses.impulse1.description">{{actor.system.user-traits.impulses.impulse1.description}}</textarea>
+                    </div>
+                    <div name="impulse2" class="impulse-wrapper">
+                        <div class="impulse-header">
+                            <input type="text" name="system.user-traits.impulses.impulse2.name"
+                                value="{{actor.system.user-traits.impulses.impulse2.name}}" />
+                            <input type="checkbox" name="system.user-traits.impulses.impulse2.advancement1" {{checked
+                                actor.system.user-traits.impulses.impulse2.advancement1}} />
+                            <input type="checkbox" name="system.user-traits.impulses.impulse2.advancement2" {{checked
+                                actor.system.user-traits.impulses.impulse2.advancement2}} />
+                            <input type="checkbox" name="system.user-traits.impulses.impulse2.advancement3" {{checked
+                                actor.system.user-traits.impulses.impulse2.advancement3}} />
+                        </div>
+                        <textarea
+                            name="system.user-traits.impulses.impulse2.description">{{actor.system.user-traits.impulses.impulse2.description}}</textarea>
+                    </div>
+                    <div name="impulse3" class="impulse-wrapper">
+                        <div class="impulse-header">
+                            <input type="text" name="system.user-traits.impulses.impulse3.name"
+                                value="{{actor.system.user-traits.impulses.impulse3.name}}" />
+                            <input type="checkbox" name="system.user-traits.impulses.impulse3.advancement1" {{checked
+                                actor.system.user-traits.impulses.impulse3.advancement1}} />
+                            <input type="checkbox" name="system.user-traits.impulses.impulse3.advancement2" {{checked
+                                actor.system.user-traits.impulses.impulse3.advancement2}} />
+                            <input type="checkbox" name="system.user-traits.impulses.impulse3.advancement3" {{checked
+                                actor.system.user-traits.impulses.impulse3.advancement3}} />
+                        </div>
+                        <textarea
+                            name="system.user-traits.impulses.impulse1.description">{{actor.system.user-traits.impulses.impulse3.description}}</textarea>
+                    </div>
+                </div>
+
+                <div class="goal-title-venture-wrapper">
+                    <h3>Goals</h3>
+                    <div class="ventures">
+                        <input type="checkbox" name="system.user-traits.goals.stored-ventures.venture1" {{checked
+                            actor.system.user-traits.goals.stored-ventures.venture1}} />
+                        <input type="checkbox" name="system.user-traits.goals.stored-ventures.venture2" {{checked
+                            actor.system.user-traits.goals.stored-ventures.venture2}} />
+                        <input type="checkbox" name="system.user-traits.goals.stored-ventures.venture3" {{checked
+                            actor.system.user-traits.goals.stored-ventures.venture3}} />
+                    </div>
+                </div>
+                <div class="goal">
+                    <div class="goal-desc">
+                        <p>What your character wants to do.<br>
+                            <u>Work towards</u> a goal to receive a +3 bonus.<br>
+                            <u>Go against</u> a goal to receive a -3 penalty.<br>
+                            To advance, mark a box to store a Venture when a goal is complete. Erase the goal from your
+                            sheet.
+                        </p>
+                    </div>
+                    <div name="Goal1" class="goal-wrapper">
+                        <div class="goal-header">
+                            <input type="text" name="system.user-traits.goals.goal1.name"
+                                value="{{actor.system.user-traits.goals.goal1.name}}" />
+                        </div>
+                        <textarea
+                            name="system.user-traits.goals.goal1.description">{{system.user-traits.goals.goal1.description}}</textarea>
+                    </div>
+                    <div name="Goal2" class="goal-wrapper">
+                        <div class="goal-header">
+                            <input type="text" name="system.user-traits.goals.goal2.name"
+                                value="{{actor.system.user-traits.goals.goal2.name}}" />
+                        </div>
+                        <textarea
+                            name="system.user-traits.goals.goal2.description">{{system.user-traits.goals.goal2.description}}</textarea>
+                    </div>
+                    <div name="Goal3" class="goal-wrapper">
+                        <div class="goal-header">
+                            <input type="text" name="system.user-traits.goals.goal3.name"
+                                value="{{actor.system.user-traits.goals.goal3.name}}" />
+                        </div>
+                        <textarea
+                            name="system.user-traits.goals.goal3.description">{{system.user-traits.goals.goal3.description}}</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column-new">
+            <div class="momentum">
+                <h3>Momentum</h3>
+                <div class="momentum-inside">
+                    <input type="number" name="system.user-attributes.momentum.value" class="momentum-input"
+                        value="{{actor.system.user-attributes.momentum.value}}" />
+                    <input type="button" class="inc-momentum" name="increment_momentum" value="+" />
+                    <input type="button" class="dec-momentum" name="decrement_momentum" value="-" />
+                    <input type="button" class="res-momentum" name="reset_momentum" value="Reset" />
+                </div>
+            </div>
+            <div class="wounds">
+                <div class="injuries">
+                    <h3>Injuries</h3>
+                    <input type="number" name="system.user-attributes.injuries.value"
+                        value="{{actor.system.user-attributes.injuries.value}}" />
+                </div>
+                <div class="conditions">
+                    <input type="checkbox" name="system.user-attributes.wound-conditions.bonus-cap" {{checked
+                        actor.system.user-attributes.wound-conditions.bonus-cap}} />
+                    <label for="system.user-attributes.wound-conditions.bonus-cap">Trait bonuses are limited to
+                        +2.</label><br>
+                    <input type="checkbox" name="system.user-attributes.wound-conditions.limited-move" {{checked
+                        actor.system.user-attributes.wound-conditions.limited-move}} />
+                    <label for="system.user-attributes.wound-conditions.limited-move">Cannot move unassisted as part of
+                        an
+                        action.</label><br>
+                    <input type="checkbox" name="system.user-attributes.wound-conditions.damage-per-turn" {{checked
+                        actor.system.user-attributes.wound-conditions.damage-per-turn}} />
+                    <label for="system.user-attributes.wound-conditions.damage-per-turn">Take 1 damage if a turn ends
+                        without taking any damage.</label><br>
+                    <input type="checkbox" name="system.user-attributes.wound-conditions.turn-priority" {{checked
+                        actor.system.user-attributes.wound-conditions.turn-priority}} />
+                    <label for="system.user-attributes.wound-conditions.turn-priority">Lose turn priority to anyone
+                        without
+                        this effect.</label><br>
+                </div>
+            </div>
+            <div class="traits">
+                <h3>Trusts</h3>
+                <div class="trust">
+                    <div name="trust-1">
+                        <div class="trust-header">
+                            <label for="system.user-traits.trusts.trust1.advancement1">Advanced?</label>
+                            <input type="checkbox" name="system.user-traits.trusts.trust1.advancement1" {{checked
+                                actor.system.user-traits.trusts.trust1.advancement1}} />
+                        </div>
+                        <textarea
+                            name="system.user-traits.trusts.trust1.description">{{actor.system.user-traits.trusts.trust1.description}}</textarea>
+                    </div>
+                    <div name="trust-2">
+                        <div class="trust-header">
+                            <label for="system.user-traits.trusts.trust2.advancement1">Advanced?</label>
+                            <input type="checkbox" name="system.user-traits.trusts.trust2.advancement1" {{checked
+                                actor.system.user-traits.trusts.trust2.advancement1}} />
+                        </div>
+                        <textarea
+                            name="system.user-traits.trusts.trust2.description">{{actor.system.user-traits.trusts.trust2.description}}</textarea>
+                    </div>
+                    <div name="trust-3">
+                        <div class="trust-header">
+                            <label for="system.user-traits.trusts.trust3.advancement1">Advanced?</label>
+                            <input type="checkbox" name="system.user-traits.trusts.trust3.advancement1" {{checked
+                                actor.system.user-traits.trusts.trust3.advancement1}} />
+                        </div>
+                        <textarea
+                            name="system.user-traits.trusts.trust3.description">{{actor.system.user-traits.trusts.trust3.description}}</textarea>
+                    </div>
+                    <div name="trust-4">
+                        <div class="trust-header">
+                            <label for="system.user-traits.trusts.trust4.advancement1">Advanced?</label>
+                            <input type="checkbox" name="system.user-traits.trusts.trust4.advancement1" {{checked
+                                actor.system.user-traits.trusts.trust4.advancement1}} />
+                        </div>
+                        <textarea
+                            name="system.user-traits.trusts.trust4.description">{{actor.system.user-traits.trusts.trust4.description}}</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="determination-group">
+                <h3>Determination</h3>
+                <div class="determination-wrapper">
+                    <input type="text" class="det-inp"
+                        name="system.user-attributes.determination.determination-target1.name"
+                        value="{{actor.system.user-attributes.determination.determination-target1.name}}" />
+                    <input type="checkbox" class="det-chk"
+                        name="system.user-attributes.determination.determination-target1.advancement1" {{checked
+                        actor.system.user-attributes.determination.determination-target1.advancement1}} />
+                    <input type="checkbox" class="det-chk"
+                        name="system.user-attributes.determination.determination-target1.advancement2" {{checked
+                        actor.system.user-attributes.determination.determination-target1.advancement2}} />
+                    <input type="checkbox" class="det-chk"
+                        name="system.user-attributes.determination.determination-target1.advancement3" {{checked
+                        actor.system.user-attributes.determination.determination-target1.advancement3}} />
+                </div>
+                <div class="determination-wrapper">
+                    <input type="text" class="det-inp"
+                        name="system.user-attributes.determination.determination-target2.name"
+                        value="{{actor.system.user-attributes.determination.determination-target2.name}}" />
+                    <input type="checkbox" class="det-chk"
+                        name="system.user-attributes.determination.determination-target2.advancement1" {{checked
+                        actor.system.user-attributes.determination.determination-target2.advancement1}} />
+                    <input type="checkbox" class="det-chk"
+                        name="system.user-attributes.determination.determination-target2.advancement2" {{checked
+                        actor.system.user-attributes.determination.determination-target2.advancement2}} />
+                    <input type="checkbox" class="det-chk"
+                        name="system.user-attributes.determination.determination-target2.advancement3" {{checked
+                        actor.system.user-attributes.determination.determination-target2.advancement3}} />
+                </div>
+                <div class="determination-wrapper">
+                    <input type="text" class="det-inp"
+                        name="system.user-attributes.determination.determination-target3.name"
+                        value="{{actor.system.user-attributes.determination.determination-target3.name}}" />
+                    <input type="checkbox" class="det-chk"
+                        name="system.user-attributes.determination.determination-target3.advancement1" {{checked
+                        actor.system.user-attributes.determination.determination-target3.advancement1}} />
+                    <input type="checkbox" class="det-chk"
+                        name="system.user-attributes.determination.determination-target3.advancement2" {{checked
+                        actor.system.user-attributes.determination.determination-target3.advancement2}} />
+                    <input type="checkbox" class="det-chk"
+                        name="system.user-attributes.determination.determination-target3.advancement3" {{checked
+                        actor.system.user-attributes.determination.determination-target3.advancement3}} />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="footer-notes">
+        <p>Notes</p>
+        <textarea name="system.user-bio.notes">{{actor.system.user-bio.notes}}</textarea>
+    </div>!-->
+</form>

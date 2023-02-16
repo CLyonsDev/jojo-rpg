@@ -1,0 +1,499 @@
+.column-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column-new {
+  flex-basis: 48%;
+}
+
+.sidebar-right {
+  width: 30%;
+  float: right;
+}
+
+.sidebar-left {
+  width: 65%;
+  float: left;
+}
+
+.footer-notes {
+  position: relative;
+  top: 20px;
+}
+
+.worldbuilding {
+  /* Sheet Tabs */
+  /* Items List */
+  /* Attributes */
+}
+
+.worldbuilding .window-content {
+  height: 100%;
+  padding: 5px;
+  overflow-y: hidden;
+  /*background: #424A83 !important;
+      color: hsl(220, 3%, 90%);*/
+}
+
+.window-header {
+  /*background: #1C224E !important;*/
+}
+
+.worldbuilding .sheet-header {
+  height: 105px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.worldbuilding .sheet-header .profile-img {
+  flex: 0 0 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.worldbuilding .sheet-header .header-fields {
+  flex: 1;
+  height: 100px;
+}
+
+.worldbuilding .sheet-header h1.charname {
+  height: 50px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: 0;
+}
+
+.worldbuilding .sheet-header h1.charname input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.worldbuilding .resource {
+  width: 50%;
+  height: 40px;
+  margin-top: 10px;
+  float: left;
+  text-align: center;
+}
+
+.worldbuilding .resource input {
+  width: 100px;
+  height: 28px;
+}
+
+.worldbuilding .tabs {
+  height: 40px;
+  border-top: 1px solid #AAA;
+  border-bottom: 1px solid #AAA;
+}
+
+.worldbuilding .tabs .item {
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.worldbuilding .tabs .item.active {
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+.worldbuilding .sheet-body {
+  overflow: hidden;
+}
+
+.worldbuilding .sheet-body .tab {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.worldbuilding .editor,
+.worldbuilding .editor-content {
+  height: 100%;
+}
+
+.worldbuilding .item-list {
+  list-style: none;
+  margin: 7px 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.worldbuilding .item-list .item {
+  height: 30px;
+  line-height: 24px;
+  padding: 3px 0;
+  border-bottom: 1px solid #BBB;
+}
+
+.worldbuilding .item-list .item img {
+  flex: 0 0 24px;
+  margin-right: 5px;
+}
+
+.worldbuilding .item-list .item-name {
+  margin: 0;
+}
+
+.worldbuilding .item-list .item-controls {
+  flex: 0 0 36px;
+}
+
+.worldbuilding .attributes-header {
+  padding: 5px;
+  margin: 5px 0;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.worldbuilding .attributes-header .attribute-label {
+  flex: 1.5;
+}
+
+.worldbuilding .attributes-header .attribute-control {
+  flex: 0 0 20px;
+}
+
+.worldbuilding .attributes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.worldbuilding .attributes-list li>* {
+  margin: 0 3px;
+  height: 28px;
+  line-height: 24px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #AAA;
+}
+
+.worldbuilding .attributes-list a.attribute-control {
+  flex: 0 0 20px;
+  text-align: center;
+  line-height: 28px;
+  border: none;
+}
+
+.worldbuilding.sheet.actor {
+  min-width: 560px;
+  min-height: 420px;
+}
+
+.worldbuilding.sheet.item {
+  min-width: 460px;
+  min-height: 400px;
+}
+
+/*.Grid-3Col {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      background-color: red;
+  }*/
+
+.Column {
+  float: left;
+  width: auto;
+}
+
+.ColumnRight3 {
+  float: right;
+  width: 33.33%;
+}
+
+.Row {}
+
+.Row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: 110px 110px 110px;
+  grid-gap: 5px;
+  text-align: left;
+  margin: auto auto;
+}
+
+.GridChild {}
+
+.Entry {
+  padding-bottom: 5px;
+  padding-right: 15px;
+}
+
+.Entry h2 {
+  text-align: center;
+}
+
+.NameDescBox {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 4px;
+  /*background: #1C224E !important;*/
+  border: 1px solid black;
+  box-shadow: inset 0px 0px 10px rgba(28, 34, 78, 0.85);
+  background: rgba(0, 0, 0, 0.1);
+
+}
+
+.CenteredTextDiv {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.SideBySide {
+  display: flex;
+}
+
+.Row2 {
+  display: flex;
+}
+
+.Column2 {
+  flex: 50%;
+}
+
+.GridEntry {
+  /*border: 1px solid black;*/
+}
+
+.LightWoundsContainer {
+  display: flex;
+}
+
+#lightwounds-button {
+  width: 24px;
+  height: 24px;
+}
+
+.woundsbox {
+  height: 24px;
+  width: 25%;
+  text-align: center;
+}
+
+.preset-roll-btn {
+  font-size: 18px;
+  width: 82px;
+  height: 36px;
+}
+
+.UrlSrcSetter {
+  display: flex;
+}
+
+.incrementbox {
+  width: 36px;
+}
+
+.initiative-button {
+  /*background:url(../images/InitiativeButton.png) no-repeat;*/
+  cursor: pointer;
+  width: 48px;
+  height: 24px;
+  border: none;
+  box-shadow: 1px 1px 2px #000000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  background-color: #c5bfb4;
+  text-align: center;
+}
+
+#largetext {
+  font-size: 18px;
+}
+
+.roll-modifier-div {
+  border: 1px solid #726857;
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.modifier-box {
+  width: 56px;
+  height: 56px;
+  font-size: 32px;
+  display: block;
+  margin: 5px auto 5px auto;
+  text-align: center;
+}
+
+#modify-button {
+  font-size: 32px;
+  width: 45px;
+  padding-bottom: 0px;
+}
+
+.resource-content {
+  padding-bottom: 5px;
+}
+
+#DropShadowDeco {
+  border: 1px solid black;
+  box-shadow: inset 0px 0px 10px rgba(28, 34, 78, 0.85);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.StandImgDisplay img {
+  box-shadow: 5px 5px 5px grey
+}
+
+.momentum-inside {
+  display: flex;
+  align-items: center;
+}
+
+.momentum-input[type="text"] {
+  flex: 1;
+  padding-right: 4px;
+}
+
+.trust {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row: auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.trust-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.trust-header label {
+  margin-right: 3px;
+}
+
+.trust-header input {
+  display: flex;
+  align-items: flex-end;
+}
+
+.trust-header input[type="checkbox"] {
+  margin-left: 4px;
+  margin-right: 0px;
+}
+
+.determination-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.determination-wrapper input[type="text"] {
+  flex: 1;
+}
+
+.determination-wrapper input[type="checkbox"] {
+  margin-left: 4px;
+  margin-right: 0px;
+}
+
+.impulse {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row: auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.impulse-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+.impulse-header input[type="text"] {
+  flex: 1;
+}
+
+.impulse-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.impulse-wrapper input[type="checkbox"] {
+  margin-left: 4px;
+  margin-right: 0px;
+}
+
+.impulse-wrapper textarea {
+  flex: 1;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.ventures {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ventures input[type="checkbox"] {
+  margin-left: 2px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.goal {
+  margin: 20px auto;
+  margin-top: 1px !important;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row: auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.goal-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.goal-headder {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px !important;
+}
+
+.goal-headder input[type="text"] {
+  flex: 1;
+}
+
+.goal-wrapper textarea {
+  flex: 1;
+  box-sizing: border-box;
+  resize: none;
+}

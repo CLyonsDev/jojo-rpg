@@ -319,3 +319,10 @@
 .StandImgDisplay img{
   box-shadow: 5px 5px 5px grey
 }
+
+.IncDecBtn {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
