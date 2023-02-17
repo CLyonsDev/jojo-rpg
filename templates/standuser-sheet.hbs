@@ -1,5 +1,8 @@
 <form class="{{cssClass}}" autocomplete="off">
 
+    <head>
+    </head>
+
     <div class="header">
         <h1>
             <div data-edit="data.name" contenteditable>
@@ -262,11 +265,12 @@
 
         {{!-- Owned Items Tab --}}
         <div class="tab items" data-group="primary" data-tab="stand">
-            <canvas id="myChart"></canvas>
-            <button class="draw-chart"></button>
+            <canvas id="standStatChart"></canvas>
             <div class="stacked-divs">
                 <div class="stand-top">
-                    <div class="stand-top-column"></div>
+                    <div class="stand-top-column">
+                        <button class="draw-chart"></button>
+                    </div>
                     <div class="stand-top-column">
                     </div>
                     <div class="stand-top-column"></div>
@@ -282,28 +286,26 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 
     <script>
-        const ctx = document.getElementById('myChart');
-
-        new Chart(ctx, {
-            type: 'bar',
+        var mychart = document.getElementById("standStatChart");
+        
+        let round_graph = new Chart(mychart, {
+            type: 'radar',
             data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Power', 'Potential', 'Precision', 'Speed', 'Range', 'Durability'],
                 datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    borderWidth: 1
+                    lable: 'Samples',
+                    data: [
+                        1, 5, 3, 2
+                    ],
+                    backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
+                    hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+                    hoverBorderColor: "rgba(234, 236, 244, 1)",
                 }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
             }
-        });
+        })
     </script>
+
 </form>

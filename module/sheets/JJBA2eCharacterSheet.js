@@ -31,5 +31,10 @@ export default class JJBA2eCharacterSheet extends ActorSheet {
             // Handle the click event
             resetMomentum(this.actor._id);
         });
+
+        html.find('.draw-chart').click((event) => {
+            // Handle the click event
+            createChart();
+        });
     }
 }

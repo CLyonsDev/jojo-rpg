@@ -20,7 +20,8 @@
   ],
   "esmodules": [
     "jjba2e.js",
-    "scripts/character-scripts.js"
+    "scripts/character-scripts.js",
+    "node_modules/chart.js/dist/chart.umd.js"
   ],
   "styles": [
     "./styles/jjba2e.css"

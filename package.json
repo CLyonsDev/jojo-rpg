@@ -1,0 +1,22 @@
+{
+  "name": "jojo-rpg",
+  "version": "2.0.0",
+  "description": "JoJo for FoundryVTT",
+  "main": "jjba2e.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slimabob/jojo-rpg.git"
+  },
+  "author": "CLyonsDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slimabob/jojo-rpg/issues"
+  },
+  "homepage": "https://github.com/slimabob/jojo-rpg#readme",
+  "dependencies": {
+    "chart.js": "^4.2.1"
+  }
+}
