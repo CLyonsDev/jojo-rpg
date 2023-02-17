@@ -2,7 +2,10 @@ export default class JJBA2eCharacterSheet extends ActorSheet {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             template: "systems/jojo-rpg/templates/standuser-sheet.hbs",
-            classes: ["jjba2e", "sheet", "namedCharacter", "character-scripts"]
+            classes: ["jjba2e", "sheet", "namedCharacter", "character-scripts"],
+            width: 690,
+            height:810,
+            tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "stand"}]
         });
     }
 

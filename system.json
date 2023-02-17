@@ -17,10 +17,10 @@
     }
   ],
   "scripts": [
-    "scripts/character-scripts.js"
   ],
   "esmodules": [
-    "jjba2e.js"
+    "jjba2e.js",
+    "scripts/character-scripts.js"
   ],
   "styles": [
     "./styles/jjba2e.css"
