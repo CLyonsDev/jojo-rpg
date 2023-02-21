@@ -1,6 +1,7 @@
 <form class="{{cssClass}}" autocomplete="off">
 
     <head>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     </head>
 
     <div class="header">
@@ -265,47 +266,82 @@
 
         {{!-- Owned Items Tab --}}
         <div class="tab items" data-group="primary" data-tab="stand">
-            <canvas id="standStatChart"></canvas>
+
             <div class="stacked-divs">
                 <div class="stand-top">
-                    <div class="stand-top-column">
-                        <button class="draw-chart"></button>
+                    <div id="column-1" class="stand-top-column">
+                        <div class="instructional-text">
+                            <p>To use your Stand, describe how it aids your character in action, or acts instead of
+                                them.<br>
+                                Using an ability isn't always an action. You only have to roll if it would count as an
+                                action anyway.<br>
+                                You may use a Stand's stats instead of the basic roll. Pick the stat that's most
+                                relevant to your action, and roll dice based on the rank it has.</p>
+                            <h3>Stats</h3>
+                            <b>Power</b>
+                            <p>Destruction, or physical force.</p>
+                            <b>Speed</b>
+                            <p>Quick reactions or fast movement.</p>
+                            <b>Precision</b>
+                            <p>When you're aiming for a target.</p>
+                            <b>Durability</b>
+                            <p>Taking hits without getting hurt.</p>
+                            <b>Range</b>
+                            <p>Stands can act within a certain distance from their Users, based on their Range.</p>
+                            <ul>
+                                <li><b>A</b> Unlimited.</li>
+                                <li><b>B</b> Long / 100m / City block</li>
+                                <li><b>C</b> Mid / 40m / Building</li>
+                                <li><b>D</b> Close / 10m / Room</li>
+                                <li><b>E</b> Within the User's reach.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="stand-top-column">
+                    <div id="column-2" class="stand-top-column">
+                        {{!<div class="chart-wrapper" style="position: relative; height:10vh; width:20vw">
+                            <canvas id="statChart"></canvas>!}}
+                            <h3>Rolling</h3>
+                            <p>Once you have a Stat for an action...</p>
+                            <ul>
+                                <li>Roll 1-3 dice, and use either the highest or lowest single result, depending on the
+                                    rank.</li>
+                                <li>Apply modifiers, like traits and Conditions.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="stand-top-column"></div>
-                </div>
-                <div class="stand-bottom">
+                    <div id="column-3" class="stand-top-column">
+                        <div class="stand-description">
+                            <h3>Appearance</h3>
+                            <textarea
+                                name="system.stand-bio.appearance">{{actor.system.stand-bio.appearance}}</textarea>
+                        </div>
+                        <b>Potential</b>
+                        <p>Once per encounter, while your Momentum is low enough, you can modify your abilities. The
+                            Momentum required is based on your Potential.<br></p>
+                        <ul>
+                            <li><b>A </b>Any amount.</li>
+                            <li><b>B </b>-1</li>
+                            <li><b>C </b>-2</li>
+                            <li><b>D </b>-3</li>
+                            <li><b>E </b> Cannot modify abilities. </li>
+                        </ul>
+                        <p>You may change the description of your ability, and either the target or effect. Permanenty
+                            reduce your potential rank by one to keep it.<br></p>
+                        <p>If you were featured in the last interlude, you may permanently reduce your Potential rank by
+                            two
+                            to gain a new ability.</p>
+                    </div>
+                    <div class="stand-bottom">
 
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
 
         {{!-- Attributes Tab --}}
         <div class="tab attributes" data-group="primary" data-tab="notes">
         </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
-
-    <script>
-        var mychart = document.getElementById("standStatChart");
-        
-        let round_graph = new Chart(mychart, {
-            type: 'radar',
-            data: {
-                labels: ['Power', 'Potential', 'Precision', 'Speed', 'Range', 'Durability'],
-                datasets: [{
-                    lable: 'Samples',
-                    data: [
-                        1, 5, 3, 2
-                    ],
-                    backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-                    hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
-                    hoverBorderColor: "rgba(234, 236, 244, 1)",
-                }]
-            }
-        })
-    </script>
 
 </form>

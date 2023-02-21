@@ -17,11 +17,10 @@
     }
   ],
   "scripts": [
-  ],
+    "scripts/character-scripts.js"
+    ],
   "esmodules": [
-    "jjba2e.js",
-    "scripts/character-scripts.js",
-    "node_modules/chart.js/dist/chart.umd.js"
+    "jjba2e.js"
   ],
   "styles": [
     "./styles/jjba2e.css"
